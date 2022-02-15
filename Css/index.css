@@ -83,6 +83,18 @@
                 }
             }
             
+            @media screen and (min-width: 990px) and (max-width:1190px) {
+                body {
+                    margin-top: 245px;
+                }
+                #header {
+                    margin-top: 0px;
+                }
+                #gate {
+                    margin-top: -150px;
+                }
+            }
+            
             .preloader {
                 position: fixed;
                 top: 0;
