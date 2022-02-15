@@ -24,6 +24,7 @@ body {
     width: auto;
     height: auto;
     padding-left: 1rem;
+    margin-top: 6px
 }
 
 .nav div.logo a {
@@ -99,8 +100,11 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    .nav-brand {
-        display: none;
+    .nav div.logo {
+        margin-top: -20px;
+    }
+    .affix div.logo {
+        margin-top: -5px;
     }
     .navTrigger {
         display: inline-block;
@@ -345,6 +349,14 @@ body {
     padding: 0;
     background-color: #111;
 }
+
+
+/*
+.affix div.logo img {
+    position: absolute;
+    top: 15px;
+}
+*/
 
 .myH2 {
     text-align: center;
