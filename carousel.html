@@ -54,9 +54,9 @@
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
+                <li class="item1" data-target="#demo" data-slide-to="0" class="active"></li>
+                <li class="item2" data-target="#demo" data-slide-to="1"></li>
+                <li class="item3" data-target="#demo" data-slide-to="2"></li>
             </ul>
 
             <!-- The slideshow -->
@@ -279,13 +279,39 @@
         <button class="btn btn-danger" id="top"> <i class="fas fa-chevron-up"></i></button>
         <!--end jump button--->
         <script src="js/jquery.js" type="text/JavaScript"></script>
-        <script src="js/bootstrap.js" type="text/JavaScript"></script>
         <script src="jspopper.js" type="text/JavaScript"></script>
+        <script src="js/bootstrap.js" type="text/JavaScript"></script>
+
         <script src="js/all.js" type="text/JavaScript"></script>
         <script src="js/owl.carousel.min.js" type="text/JavaScript"></script>
         <script src="js/load.js" type="text/JavaScript"></script>
         <script src="js/up.js" type="text/JavaScript"></script>
         <script src="js/myowl.js" type="text/JavaScript">
+        </script>
+        <script>
+            $(document).ready(function() {
+                // Activate Carousel
+                $("#demo").carousel();
+
+                // Enable Carousel Indicators
+                $(".item1").click(function() {
+                    $("#demo").carousel(0);
+                });
+                $(".item2").click(function() {
+                    $("#myCarousel").carousel(1);
+                });
+                $(".item3").click(function() {
+                    $("#myCarousel").carousel(2);
+                });
+
+                // Enable Carousel Controls
+                $(".carousel-control-prev").click(function() {
+                    $("#demo").carousel("prev");
+                });
+                $(".carousel-control-next").click(function() {
+                    $("#demo").carousel("next");
+                });
+            });
         </script>
     </body>
 
