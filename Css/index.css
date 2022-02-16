@@ -82,21 +82,13 @@
                         background-size: 100vw 100vh;
                         overflow: hidden;
                     }
-                    /*   #gate {
-                    margin-top: -15px;
-                    justify-content: center;
-                }
-                #header {
-                    margin-top: 130px
-                }
-                #gate a {
-                    width: 160px;
-                    margin-left: 30px
-                }
-                #gate a.btn-primary {
-                    width: 160px;
-                }
-            }*/
+                    #gate {
+                        margin-top: -15px;
+                        justify-content: center;
+                    }
+                    #header {
+                        margin-top: 110px
+                    }
                 }
                 
                 @media screen and (max-width: 400px) {
