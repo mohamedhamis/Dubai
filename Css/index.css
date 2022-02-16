@@ -82,10 +82,16 @@
                     overflow: hidden;
                 }
             #gate{
-margin-top:-44px
+margin-top:10px;
+justify-content:center;
 
 }#header{
-margin-top:130px
+margin-top:180px
+}
+#gate a{
+width:190px;
+margin-left:30px
+
 }
             }
             
